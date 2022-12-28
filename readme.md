@@ -22,11 +22,12 @@ Run around to collect snow and charge up your snow bar! Shoot snow at players fo
 
 ![Gameplay screen](readme_images/gameplay.jpg)
 
-Unfortunately the game has no music because I have no idea how to design any. The game is entirely built in C# and with the Unity game engine.
+The game is entirely built in C# and with the Unity game engine.
 
 ## Credits
 
 Music by [RoccoW](https://soundcloud.com/roccow)
 - Menu theme: ["Jam Jam Jam" said the Owner of the Shop](https://soundcloud.com/roccow/jam-jam-jam-said-the-owner-of)
 - In-game theme: [17092017](https://soundcloud.com/roccow/f17092017-1)
+
 Everything else by me.
