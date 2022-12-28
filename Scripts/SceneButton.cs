@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneButton : MonoBehaviour {
-    private int GAME_SCENE = 6;
-    private int MUSIC_SCENE = 8;
+    private readonly int GAME_SCENE = 6, MUSIC_SCENE = 8;
     public enum ButtonName {
         Next,
         Back,
