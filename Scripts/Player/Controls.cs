@@ -3,26 +3,40 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Controls : MonoBehaviour {
+    public static readonly KeyCode
+        // P1 Controls
+        p1Right = KeyCode.RightArrow,
+        p1Left = KeyCode.LeftArrow,
+        p1Up = KeyCode.UpArrow,
+        p1Down = KeyCode.DownArrow,
+        p1Shoot = KeyCode.Period,
+        // P2 Controls
+        p2Right = KeyCode.D,
+        p2Left = KeyCode.A,
+        p2Up = KeyCode.W,
+        p2Down = KeyCode.S,
+        p2Shoot = KeyCode.R;
+
     public bool wasd;
 
     public KeyCode rightKey() {
-        return wasd ? KeyCode.D : KeyCode.RightArrow;
+        return wasd ? p2Right : p1Right;
     }
 
     public KeyCode leftKey() {
-        return wasd ? KeyCode.A : KeyCode.LeftArrow;
+        return wasd ? p2Left : p1Left;
     }
 
     public KeyCode upKey() {
-        return wasd ? KeyCode.W : KeyCode.UpArrow;
+        return wasd ? p2Up : p1Up;
     }
 
     public KeyCode downKey() {
-        return wasd ? KeyCode.S : KeyCode.DownArrow;
+        return wasd ? p2Down : p1Down;
     }
 
     public KeyCode shootKey() {
-        return wasd ? KeyCode.R : KeyCode.Period;
+        return wasd ? p2Shoot : p1Shoot;
     }
 
     public bool right() {

@@ -6,9 +6,9 @@ public class BasicMovement : MonoBehaviour {
     public Controls controls;
 
     private const float
-        speedChangeFactor = 0.001f, // each update, a keydown changes speed by this much
+        speedChangeFactor = 0.02f, // each update, a keydown changes speed by this much
         horizontalFactor = 2, // how much more important a horizontal keydown is versus vertical
-        maximumSpeed = 0.75f, // maximum speed of each player
+        maximumSpeed = .8f, // maximum speed of each player
         // maximum speeds for each direction
         horizontalMax = horizontalFactor * maximumSpeed,
         verticalMax = horizontalFactor * maximumSpeed,
@@ -24,6 +24,9 @@ public class BasicMovement : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        if (Input.GetKey(KeyCode.Joystick1Button0))
+            Debug.Log("button0");
+
         int horizontalAnimation = 0, verticalAnimation = 0;
         horizontal = rb.velocity.x;
         vertical = rb.velocity.y;

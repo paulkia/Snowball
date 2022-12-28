@@ -180,6 +180,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f9251151a61f40198829b5f6e3fd073, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: -117864560, guid: 83ab8731d3e2147f493f2c851d065606, type: 3}
+  - {fileID: 2064605387, guid: 83ab8731d3e2147f493f2c851d065606, type: 3}
+  - {fileID: 1686949560, guid: 83ab8731d3e2147f493f2c851d065606, type: 3}
   buttonName: 2
 --- !u!212 &31769482
 SpriteRenderer:
@@ -222,7 +226,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 83ab8731d3e2147f493f2c851d065606, type: 3}
+  m_Sprite: {fileID: -117864560, guid: 83ab8731d3e2147f493f2c851d065606, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -353,7 +357,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2272e81be24ee42b9be98531d50ec2ea, type: 3}
+  m_Sprite: {fileID: 1706763669, guid: 2272e81be24ee42b9be98531d50ec2ea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -391,6 +395,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f9251151a61f40198829b5f6e3fd073, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 1706763669, guid: 2272e81be24ee42b9be98531d50ec2ea, type: 3}
+  - {fileID: 1668210078, guid: 2272e81be24ee42b9be98531d50ec2ea, type: 3}
+  - {fileID: 887580643, guid: 2272e81be24ee42b9be98531d50ec2ea, type: 3}
   buttonName: 0
 --- !u!61 &647600056
 BoxCollider2D:
@@ -880,6 +888,74 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1514860480
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1514860483}
+  - component: {fileID: 1514860482}
+  - component: {fileID: 1514860481}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1514860481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514860480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1514860482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514860480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1514860483
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514860480}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1521952284
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,6 +1013,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f9251151a61f40198829b5f6e3fd073, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 734664534, guid: 855748c6f81774a3e8891ec15a25a92a, type: 3}
+  - {fileID: -1441882510, guid: 855748c6f81774a3e8891ec15a25a92a, type: 3}
+  - {fileID: 1489137349, guid: 855748c6f81774a3e8891ec15a25a92a, type: 3}
   buttonName: 1
 --- !u!212 &1521952287
 SpriteRenderer:
@@ -979,7 +1059,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 855748c6f81774a3e8891ec15a25a92a, type: 3}
+  m_Sprite: {fileID: 734664534, guid: 855748c6f81774a3e8891ec15a25a92a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

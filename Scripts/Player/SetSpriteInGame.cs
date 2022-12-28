@@ -17,9 +17,4 @@ public class SetSpriteInGame : MonoBehaviour {
         RuntimeAnimatorController rac = controllers[animationSelectionIndex];
         gameObject.GetComponent<Animator>().runtimeAnimatorController = rac;
     }
-
-    // Update is called once per frame
-    void Update() {
-
-    }
 }

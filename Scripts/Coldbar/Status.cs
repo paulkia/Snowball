@@ -3,15 +3,15 @@ using UnityEngine.SceneManagement;
 
 public class Status : MonoBehaviour {
     public Controls controls;
-    private const float
+    private readonly float
         // Bounds of % cold of a player. Invariant: in subset of range [0, 100]
         maxCold = 100, minCold = 0.5f,
         // Bounds of % snow collected by a player. Invariant: in subset of range [0, 100]
         maxSnow = 100, minSnow = 0,
         // sf * max(speed.x, speed.y) = snow collected by player per frame
-        snowFactor = 0.01f,
+        snowFactor = 0.25f,
         // each frame, player's cold value decreases by warmingRate percent
-        warmingRate = 0.002f;
+        warmingRate = 0.00f;
     public float
         // percentages of cold and snow statuses of players. Invariant: in subset of range [0, 100]
         cold, snow; 
@@ -36,7 +36,7 @@ public class Status : MonoBehaviour {
     }
 
     public void getHitBySnowball(GameObject snowball) {
-        cold = Mathf.Min(maxCold, cold + 20);
+        cold = Mathf.Min(maxCold, cold + 25);
     }
 
     public void decreaseSnow(float val) {

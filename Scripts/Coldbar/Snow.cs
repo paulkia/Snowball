@@ -4,7 +4,7 @@ using UnityEngine;
 // depending on the player's snow status
 public class Snow : MonoBehaviour {
     public Status stat;
-    private float
+    private readonly float
         maxPos = 0.0402f, minPos = -0.09837f,
         maxScale = 0.2892666f, minScale = 0.01193536f;
 
