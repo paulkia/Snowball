@@ -1,5 +1,5 @@
 # Snowball
-- See the demo [here](https://www.youtube.com/watch?v=ORwPvRktaks)!
+### See the demo [here](https://www.youtube.com/watch?v=ORwPvRktaks)!
 
 Snowball is a two player game, with WASD and arrow-keys as controls. Players can customize their color scheme, run around to collect snow, throw snow at each other, and try to stay warm. The first player to get cold loses!
 
